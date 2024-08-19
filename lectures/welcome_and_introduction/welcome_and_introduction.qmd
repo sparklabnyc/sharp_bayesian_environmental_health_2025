@@ -29,8 +29,8 @@ format:
 ## Logistics {.smaller}
 
 - __Wi-Fi__ Network: guest-net (no password). Open any webpage (i.e. BBC News, Amazon, etc.) on your browser, a pop-up will appear to connect to guest Wi-Fi. Accept terms to gain access.
-- __Restrooms__. Directly outside the classroom (women on the left, men on the right)
-- __Course materials__. All Material (lectures/labs) is located on Posit Cloud. You were invited to the ‘sharp_bayesian_environmental_health_2023’ Workspace via email on Sunday 18th August.
+- __Restrooms__. Directly outside the classroom.
+- __Course materials__. All Material (lectures/labs) is located on Posit Cloud. You were invited to the ‘sharp_bayesian_environmental_health_2024’ Workspace via email on Tuesday 19th August.
 - __Name tags__. Please wear during workshop to make connecting with others easier! Please return after the Workshop to help us be greener.
 - Contact Meaghan Doherty __914-522-8114__ for assistance
 
@@ -59,21 +59,13 @@ The __Bayesian Modeling for Environmental Health Workshop__ is a two-day intensi
   - Software options
 :::
 
-## Bayesian Modelling Workshop Team (to update)
+## Bayesian Modelling Workshop Team
 
 ![](assets/instructor.png)
 
-## Bayesian Modelling Workshop Team
-
-![](assets/admin.png)
-
-## 9 US States + 1 country (to update)
+## 13 US States + 1 country
 
 ![](assets/attendee_map.png)
-
-## 10 US States + 5 countries (to update)
-
-![](assets/attendee_instructor_map.png)
 
 ## Day 1 (August 21st 2024)
 
@@ -123,7 +115,7 @@ The __Bayesian Modeling for Environmental Health Workshop__ is a two-day intensi
 
 :::
 
-## What is your experience level with R? (to update) {.smaller}
+## What is your experience level with R? {.smaller}
 
 ```{r}
 # Load packages
@@ -144,92 +136,80 @@ p <- ggplot(df, aes(x = experience_level)) +
 plot(p)
 ```
 
-## What does a 50% chance of rain mean to you? (to update) {.smaller}
+## What does a 50% chance of rain mean to you? {.smaller}
 
-- it generally means that weather forecasters believe that there is an equal probability of rain occurring or not occurring at a particular location or during a specified time period.
-- That there is a 50% chance that rain will occur and a 50% chance that rain will not occur
-80%
-- Among all times someone says this sentence to me, he/she will be correct half of the times.
-- I will 100% not bring an umbrella.
-- Pr(rain) == 0.5 (i.e. the probability that it will rain at all is 50%, rain/no rain equally likely)
-- 50% of the area will have rain
-- One-half chance of precipitation occurring in a particular area during a specific time?
+- given the data used to generate prediction, there is equal likelihood of raining and not raining. Also it means I’ll be bringing my umbrella.
+- I am definitely not a meteorologist but our snow forecasters tell us its a combination of % described catchment area and confidence that any given area in that catchment will receive precipitation
+- There is a 50% chance that rain will occur in the allotted time period
+- I'm not a meteorologist, but I assume it means there is a 50% likelihood that any location within the forecast area will experience rain during the forecast period. It might also mean that rain will cover 50% of the forecasted region/area.
+- If you were to stay in one location, there is a 50% likelihood that you will experience rain. If you were to travel around local areas, 50% of those areas will likely experience rain.
 
-## What does a 50% chance of rain mean to you? (to update) {.smaller}
+## What does a 50% chance of rain mean to you? {.smaller}
 
-- I would assume that it means there is a 50% chance that at least some part of the predicted/forecasted area will experience rain at all.
-- That 50% of the area will get rain.
-- It means based on prior knowledge and the collected other information, we believe it will rain at 50% chances.
-- Half the area will experience rain
-- 50% of the area will have rain
-- There is a 50% probability (or 1 in 2 chance/odds) that it will rain today.
-- In probability, no prior knowledge about whether or not it will rain. In practice, it’d be worth packing an umbrella.
-- Likelihood of rainfall occurring is 50%
+- based on previous data with similar starting weather conditions, 50% of those instances resulted in rain
+- Have not actually given it too much thought before. Beyond it being just as likely to rain and not rain... I think it means that there is 100% chance that 50% of the area covered will get rain or for 100% of the area considered, 50% chance there will be rain? Combination of area covered and predicted likelihood, I think?
+- There is a 0.5 probability that it will rain.
+- 50% of locations in a predicted area will rain (?)
+- In the area where the forecast model is being run, 50% of the pixels are predicted to experience rain.
 
-## What does a 50% chance of rain mean to you? (to update) {.smaller}
+## What does a 50% chance of rain mean to you? {.smaller}
 
-- The probability of it raining at a given time and place is 50%.
-- 50% probability of getting wed in any one spot in the area during the period
-- In a given area, 50% of landmass is expected to see rainfall
-- Equal probability for a dry or wet day
-- There is a 50% chance it will rain somewhere within a geographic area over the course of a defined period of time.
-- The probability of experiencing rain, given this weather pattern is 50 out of 100.
-- It is the probability that a space in a given geographical area will receive rain.
+- That it is equally likely to rain as it is to not rain.
+- 50% of the time it will rain and 50% of the time it will not.
+- there is an equal likelihood of rain occurring or not occurring
+- 1 out 2 chance that it will rain.
+- There is a 50% chance it will rain.
 
-## What does a 50% chance of rain mean to you? (to update) {.smaller}
+## What does a 50% chance of rain mean to you? {.smaller}
+
+- There is a 50% chance of rain occurring in the reporting area
+- a 50 percent chance for any one spot in the forecast area to get wet during the forecast period
+- For the region, there is a half and half chance that some point within the area will see rain.
+- 50/100 days with the same or similar conditions had rain, which means that today there is a 50/100 chance of there being any rain
+- There is an equal chance that it will rain versus not rain
+
+## What does a 50% chance of rain mean to you? {.smaller}
 
 - Met Office (UK): A 50% chance of rain represents a 5 in 10 chance that rain will fall at some point during that period.
 
-## What do you understand from a 95% Confidence Interval (CI)? (to update) {.smaller}
+## What do you understand from a 95% Confidence Interval (CI)?{.smaller}
 
-- a 95% confidence interval means that if we were to repeat the same sampling procedure many times and calculate the confidence interval each time, approximately 95% of those intervals would contain the true population parameter
-- That we are 95% confident that the true value of the mean is present within a certain range of values along a certain distribution
-- 95%
-- The 95% confidence interval represents the range of values within my estimate is expected to fall with level of confidence of 95%.  However,  giving it another thought, I realize I should also define what exactly a 95% level of confidence means, but I think I will wait for the course to find out :)
-- They are better than a p-value.
+- the middle 95 range of values you would get had the experiment been repeated in the exact same condition 100 times. So the extreme values you might expect to fall outside purely by chance
+- Assuming CI=confidence interval, if I randomly sample from a population 100 times and calculate the mean and SE for each draw, 95% of those computed intervals will include the true population mean.
+- Confidence in having attained correct results is 95% (meaning a 5% chance of being incorrect); also indicates stability or repeatability of results
+- If we were to take many samples from the population and compute a 95% confidence interval from each of them the same way, we would expect about 95% of the intervals to contain the true parameter value
+- If the 95% CI crosses the null, then your association is not statistically significant.
 
-## What do you understand from a 95% Confidence Interval (CI)? (to update) {.smaller}
+## What do you understand from a 95% Confidence Interval (CI)?{.smaller}
 
-- *confidence interval = in repeated sampling, 95/100 CIs will include true value // credible interval = probability that estimated value falls within this range, given observed data
-- 95% of the time the value estimated will be within the range
-- A range of values that is likely to contain the true value of a population parameter with a 95% level of confidence
-- It essentially tells us the degree of uncertainty in the data sampling process, i.e. how many times we'd expect our parameter estimate to be within our 95% CI if we repeated the same experiment that generated the 95% CI several times, and not about the probability we'd expect to see the true parameter's value fall within the CI.
-- That 95% of the data will fall within the true value.
-- It means the estimate of a parameter has 95% chances to cover the true value of the parameter within the range.
+- 95% of random iterations wherein parameter of interest falls within specified range
+- 95% of 95%CIs will upon replication include the true population parameter
+- There is 5% chance of being wrong or making the wrong assumption.
+- If 100 CIs are created, 95 of the 100 will cover the true value
+- The range of values between which the "true" answer lies 95% of the time if you ran an experient over and over again.
 
-## What do you understand from a 95% Confidence Interval (CI)? (to update) {.smaller}
+## What do you understand from a 95% Confidence Interval (CI)?{.smaller}
 
-- The probability our effect falls within this range
-- 95% of the time the estimate will fall within the given CI
-- The 95% CI tells us the range of possible effect estimate spanning from the 2.5th to 97.5th percentiles.
-- I receive a rough approximation of the uncertainty around an estimate and the range of possible values if an infinite number of trials were repeated.
-- It implies that at 95% confidence the value lies within the calculated interval
-- A range of likely values for a parameter estimate based on the variability and assumed distribution of the underlying data used to make the estimate.
-- Were I to conduct the study repeatedly, 95% of the results would lie between the endpoints of the CI that I obtained in my data.
+- That there is a 95% probability that the result contains a true parameter when drawing from a random sample repeatedly.
+- 95% percent of the time the estimate will fall within this range of 95% CI.
+- I am 95% confident that the population parameters is in this confidence interval
+- A statistic of uncertainty around the mean measurement.
+- The result is 95% true.
 
-## What do you understand from a 95% Confidence Interval (CI)? (to update) {.smaller}
+## What do you understand from a 95% Confidence Interval (CI)?{.smaller}
 
-- Given necessary data generation and modeling assumptions are met, 95 of 100 confidence intervals will contain the true value over repeated sampling and evaluation
-- The test statistic is contained  95 % of the time in the CI when the same experiment is repeated multiple times on independent samples.
-- We are 95% confident that the true population mean will fall within this interval.
-- 95 out of 100 CIs (from 100 random samples) will contain the true value of the parameter of interest.
-- We are confident that the true parameter estimate lies between the lower and upper confidence limits 95% of the time. A 95% confidence interval provides us with a range of plausible estimates of the parameter of interest in the target population, based on our parameter estimate obtained in the sample cohort.
+- The true value is 95% likely to be within the upper and lower CI limits
+- If we take 100 different samples and compute a confidence interval for each sample, we would expect approximately 95 of the 100 confidence intervals to contain the true population parameter.
+- There is a 5% chance that the true value lies outside of the given range.
+- Determines the precision and accuracy of model predictions (larger CI means less precision, too small is potential overfitting, etc.)
+- 95 times out of 100 the true estimate will lie within this interval
 
-## What do you understand from a 95% Confidence Interval (CI)? (to update)
+## What do you understand from a 95% Confidence Interval (CI)? {.smaller}
 
 ::: incremental
-- A 95% CI is an interval which will contain the true value 95% of the time, i.e., if you got to repeat the experiment 100 times, 95 of the 95% CIs would contain the true value, while 5 of them would not.
-<!-- - Is this what you expected? -->
-<!-- - There a more intuitive way? -->
-![](assets/Confidence Intervals.png)
-:::
-
-## What do you understand from a 95% Confidence Interval (CI)? (to update)  {.smaller}
-
-::: incremental
-- Frequentist framework: If we were to repeat the data collection process 100 times and construct confidence intervals for each sample, 95 of those would contain the true parameter (i.e., the target parameter is fixed but unknown, and the interval is random).
+- Frequentist framework: If we were to repeat the data collection process 100 times and construct confidence intervals for each sample, 95 of those would contain the true parameter (i.e., the target parameter is fixed but unknown, and the interval is random, in other words, there exists a true value of the target parameter, and we may or may not be capturing it with the 95% CI).
 - Bayesian framework: Given the observed data and our prior beliefs, there is a 95% probability that the true parameter value falls within the credible interval (i.e., target parameter is random but interval is fixed).
-- Philosophical difference.
+- Philosophical difference but with differences in methodology and use cases.
 :::
 
 <!-- - Frequentist framework: “There is an 95% probability that when computing a confidence interval from data of this sort, the effect falls within this range”. -->
