@@ -2,7 +2,7 @@
 title: "Hierarchical Bayesian modelling"
 subtitle: ""
 author:
- - name: "Elizaveta Semenova"
+ - name: "Elizaveta Semenova, Robbie M. Parks"
    email: "elizaveta.p.semenova@gmail.com"
 institute: "Computer Science Department, University of Oxford"
 date: 2024-08-21
