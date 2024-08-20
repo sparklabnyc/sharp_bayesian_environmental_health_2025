@@ -58,11 +58,6 @@ data_england <- read_sf(here("data", "England", "COVIDecoregression.shp"))
 glimpse(data_england)
 summary(data_england)
 class(data_england)
-
-data_england_simpler <- rgeos::gSimplify(as(data_england, "Spatial"), tol = 500)
-data_england_simpler <- st_as_sf(data_england_simpler)
-data_england_simpler <- cbind(data_england_simpler, data_england %>% mutate(geometry = NULL))
-data_england <- data_england_simpler
 ```
 
 As with the previous labs, let's use the package `ggplot2` to plot maps of the variables.
