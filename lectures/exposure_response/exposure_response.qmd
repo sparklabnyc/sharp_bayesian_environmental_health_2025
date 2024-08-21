@@ -537,7 +537,6 @@ It doesn't look like any simple parametric form (e.g. polynomial, sinusoidal, et
 
 ![](Figures/splinesExample.png){fig-align="center"}
 
-
 ```{r}
 #| echo: false
 #| eval: true
@@ -573,7 +572,6 @@ dat %>%
 -   This has more power since it allows variation within categories to predict variation in outcome.
 -   We can use fewer categories to capture the deviation from a strictly linear curve because we have slopes within category.
 
-
 ::: {style="font-size: 80%;"}
 ## Linear splines
 
@@ -597,7 +595,19 @@ $$(x-k)_+=\begin{cases} 0, \quad x<k \\ x-k, \quad x\geq k\\\end{cases}$$
 
 ## Linear splines in R
 
--   You can use the `bs()` function in R to define the basis function: `bs(x, degree = 3, knots = c(-1, 0.5, 1.5, 3))` and plot the result:
+-   You can use the `bs()` function in R to define the basis function:
+
+```{r}
+#| echo: true
+#| eval: true
+
+bs(dat$x, degree = 1, knots = c(-1, 0.5, 1.5, 3)) %>% 
+  head()
+```
+
+## Linear splines in R
+
+-   And plot the result:
 
 ```{r}
 #| echo: false
@@ -606,7 +616,6 @@ $$(x-k)_+=\begin{cases} 0, \quad x<k \\ x-k, \quad x\geq k\\\end{cases}$$
 #| fig-width: 10
 #| message: false
 #| warning: false
-
 
 fit <- lm(y ~ bs(x, degree = 1, knots = c(-1, 0.5, 1.5, 3)), data = dat)
 
@@ -649,10 +658,11 @@ Y_i = \beta_0 & + \beta_1 x +\beta_2 x^2 + \beta_3 x_3 + \\
 ::: {style="font-size: 80%;"}
 ## Cubic splines
 
--   Similar as before: `bs(x, degree = 3, knots = c(-1, 0.5, 1.5, 3))`:
+-   Similar as before:
+-   `bs(x, degree = 3, knots = c(-1, 0.5, 1.5, 3))`:
 
 ```{r}
-#| echo: true
+#| echo: false
 #| eval: true
 fit_c <- lm(y ~ bs(x, degree = 3, knots = c(-1, 0.5, 1.5, 3)), data = dat)
 ```
@@ -719,7 +729,8 @@ Why are the borders so wiggly?
 ::: {style="font-size: 90%;"}
 ## Natural cubic splines in R
 
--   To define natural cubic splines in R: `ns(x, knots = c(-1, 0.5, 1.5, 3)):`
+-   To define natural cubic splines in R:
+-   `ns(x, knots = c(-1, 0.5, 1.5, 3)):`
 
 ```{r}
 #| echo: false
