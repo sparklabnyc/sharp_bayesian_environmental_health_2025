@@ -16,7 +16,7 @@ This workshop is largely written in [`NIMBLE`](https://r-nimble.org/).
 
 Below is the set of labs to follow throughout the two days:
 
-### Day 1 (August 21st 2024)
+### Day 1 (August 14th 2025)
 
 | Time         | Activity                 |
 | ------------ | ------------------------ |
@@ -37,7 +37,7 @@ Below is the set of labs to follow throughout the two days:
 | 4:00  - 4:45 | [Hierarchical Modelling](/labs/hierarchical_modelling/hierarchical_modelling.qmd) (Hands-on Lab) |
 | 4:45  - 5:00 | Questions and Wrap-up |
 
-### Day 2 (August 22nd 2024)
+### Day 2 (August 15th 2025)
 
 | Time         | Activity                 |
 | ------------ | ------------------------ |
