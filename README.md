@@ -4,7 +4,7 @@
 
 ## Introduction
 
-GitHub repo through which we're developing and sharing materials for the SHARP Bayesian Modeling for Environmental Health Workshop, taking place in person during August 21st-22nd 2024.
+GitHub repo through which we're developing and sharing materials for the SHARP Bayesian Modeling for Environmental Health Workshop, taking place in person during August 14th-15th 2025.
 
 ## Notes for attendees
 
